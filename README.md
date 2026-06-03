@@ -47,7 +47,7 @@ This portfolio website represents my academic background, technical skills, deve
 
 ## Folder Structure
 
-```text
+
 arman-islam-portfolio/
 │
 ├── index.html
