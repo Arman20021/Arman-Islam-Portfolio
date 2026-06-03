@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+ 
 <link rel="stylesheet" href="assets/css/styles.css">
 
-<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-<title>Rizvi Karim Ohy | Portfolio</title>
+ <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<title>Arman Islam</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
 <body>
+<div class="site-bg" aria-hidden="true"><span></span><span></span><span></span></div>
 
 <!-- HEADER -->
 <header class="l-header">
@@ -23,40 +24,32 @@
   
 
 
- <nav class="nav bd-grid reveal">
+<nav class="nav bd-grid reveal">
     
 
-       
- <a href="#home" class="nav__logo ">
-      <img src="assets/img/FullLogo.png" alt="Logo">
-    </a>
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#cp" class="nav__link">CP Profiles</a></li>
+            <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
+             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 
-        <div class="nav__menu section reveal" id="nav-menu" style="margin-right: -5px;">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
-                <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                <div class="nav__item">
-    <a href="assets/cv/Final_CV.pdf" download class="button" style="font-size:12px; margin-right: -450px;" >
-        Download CV
-    </a>
-</div>
-                
-            </ul>
-        </div>
-      
+            <li class="nav__item">
+                <a href="assets/cv/Final_CV.pdf" download class="button nav__cv-btn">
+                    Download CV
+                </a>
+            </li>
+        </ul>
+    </div>
 
-</div>
-
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
+    <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+    </div>
+</nav>
 </header>
 
 <main class="l-main">
@@ -70,7 +63,7 @@
     </span>
     
     
-    <br>I'am <span class="home__title-color">Rizvi Karim Ohy</span><br>
+    <br>I'am <span class="home__title-color">Md Arman Islam</span><br>
     </h1>
 
     <h2 class="typing-text">
@@ -79,35 +72,53 @@
 </div>
  <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <linearGradient id="portfolioGradient" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.95"/>
+                                <stop offset="55%" stop-color="#8b5cf6" stop-opacity="0.9"/>
+                                <stop offset="100%" stop-color="#f472b6" stop-opacity="0.88"/>
+                            </linearGradient>
+                        </defs>
                         <mask id="mask0" mask-type="alpha">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="0" href="assets/img/ami2.png"/>
+                            <image 
+    class="home__blob-img" 
+    x="0" 
+    y="0" 
+    width="479" 
+    height="467" 
+    href="assets/img/ami2.jpg"
+    preserveAspectRatio="xMidYMid slice"
+/>
                         </g>
                     </svg>
                 </div>
 
 
-<div>
+<div class="home__actions">
     <a href="#contact" class="button">Contact</a>
 </div>
 
-    <div class="home__social">
-        <a href="https://www.linkedin.com/in/rizvi-karim-ohy-6905a42b5/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/syringe-Ohy" class="home__social-icon"><i class='bx bxl-github'></i></a>
-        <a href="https://www.facebook.com/syringe.ohy/" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
-    </div>
-
+<div class="home__social">
+    <a href="https://www.linkedin.com/in/arman-islam-19aa8a252/" class="home__social-icon">
+        <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="https://github.com/Arman20021" class="home__social-icon">
+        <i class='bx bxl-github'></i>
+    </a>
+    <a href="https://www.codechef.com/users/arman_2002" class="home__social-icon">
+        <i class="bx bx-code-alt skills__icon"></i>
+    </a>
+</div>
     
    
 </section>
 <section>   
 
-    <p class="quote show-on-load" style="margin-top: -43px;">
-    "Mistakes are proof that you are trying."
-</p>
+
 <p class="GG show-on-load" style="margin-top: -0px;">
   ohy
     
@@ -122,61 +133,63 @@
 
     <div class="about__container bd-grid">
         <div class="about__img">
-            <img src="assets/img/oreeami.png" alt="">
+            <img src="assets/img/oreeami.jpg" alt="">
         </div>
 
         <div class="section reveal">
-            <h2 class="about__subtitle">I'm Rizvi Karim Ohy</h2>
+            <h2 class="about__subtitle">I'm Md Araman Islam</h2>
             <p class="about__text">
-                I am a Computer Science & Engineering student at American International University Bangladesh (AIUB), 
-                specializing in Machine Learning and Data Science. I am passionate about cybersecurity, 
-                intelligent systems, and solving real-world problems using AI-driven solutions.
+               I am a Computer Science & Engineering student at American International University-Bangladesh (AIUB), passionate about software development, full-stack web applications, and problem solving. I enjoy building real-world solutions using ASP.NET Core, Django, databases, and modern technologies.
             </p>
         </div>
     </div>
     </div>
 </section>
 <!-- EDUCATION -->
-<section class="about section " id="education">
-    <div class="section reveal">
-    <h2 class="section-title">Education</h2>
+<section class="about section" id="education">
+    <div class="reveal">
+        <h2 class="section-title">Education</h2>
 
-    <div class="about__container bd-grid">
+        <div class="education__container bd-grid">
 
-        <!-- AIUB -->
-        <div class="about__img section reveal" style="text-align:center;">
-            <a href="https://www.aiub.edu" target="_blank">
-                <img src="assets/img/aiub.jpg" alt="AIUB Logo" style="width:120px;">
-            </a>
+            <!-- AIUB -->
+            <div class="education__item reveal">
+                <div class="education__img">
+                    <a href="https://www.aiub.edu" target="_blank">
+                        <img src="assets/img/aiub.jpg" alt="AIUB Logo" class="education-logo">
+                    </a>
+                </div>
+
+                <div class="education__content">
+                    <h2 class="about__subtitle">American International University Bangladesh</h2>
+                    <p class="about__text">
+                        BSc in Computer Science & Engineering <br>
+                        CGPA: 3.61 / 4.00 <br>
+                        2022 - Present
+                    </p>
+                </div>
+            </div>
+
+            <!-- College -->
+            <div class="education__item reveal">
+                <div class="education__img">
+                    <a href="https://rgcc.ac.bd/" target="_blank">
+                        <img src="assets/img/rc.png" alt="College Logo" class="education-logo">
+                    </a>
+                </div>
+
+                <div class="education__content">
+                    <h2 class="about__subtitle">Rajshahi Govt City College</h2>
+                    <p class="about__text">
+                        HSC 2021 <br>
+                        Group: Science <br>
+                        GPA: 5.00 / 5.00 
+                    </p>
+                </div>
+            </div>
+
         </div>
-
-        <div class="section reveal">
-            <h2 class="about__subtitle">American International University Bangladesh</h2>
-            <p class="about__text">
-                BSc in Computer Science & Engineering <br>
-                CGPA: 3.69 / 4.00 <br>
-                2022 - Present
-            </p>
-        </div>
-
-        <!-- College -->
-        <div class="about__img section reveal" style="text-align:center;">
-            <a href="https://www.kpcbd.edu.bd/" target="_blank">
-                <img src="assets/img/kpc1.png" alt="College Logo" style="width:120px;">
-            </a>
-        </div>
-
-        <div class="section reveal">
-            <h2 class="about__subtitle">Khulna Public College</h2>
-            <p class="about__text">
-                HSC 2021 & SSC 2019 <br>
-                Group: Science <br>
-                GPA: 5.00 / 5.00 at both levels.
-            </p>
-        </div>
-
     </div>
-    
 </section>
 <section class="skills section" id="skills">
     <div class="section reveal">
@@ -187,10 +200,10 @@
                 <h2 class="skills__subtitle ss reveal">Technical Skills</h2>
 
                 <div class="skills__data ss reveal">
-                    <div class="skills__names">
-                        <i class='bx bxl-python skills__icon'></i>
-                        <span class="skills__name">Python</span>
-                    </div>
+    <div class="skills__names">
+        <i class='bx bxl-python skills__icon'></i>
+        <span class="skills__name">Python</span>
+    </div>
                     <div><span class="skills__percentage">Advanced</span></div>
                 </div>
 
@@ -207,21 +220,21 @@
                         <i class='bx bxl-c-plus-plus skills__icon'></i>
                         <span class="skills__name">C++</span>
                     </div>
-                    <div><span class="skills__percentage">Intermediate</span></div>
+                    <div><span class="skills__percentage">Advanced</span></div>
                 </div>
 
                 <div class="skills__data ss reveal">
-                    <div class="skills__names">
-                        <i class='bx bxl-microsoft skills__icon'></i>
-                        <span class="skills__name">C# / .NET</span>
-                    </div>
+    <div class="skills__names">
+        <i class="bx bxl-microsoft skills__icon"></i>
+        <span class="skills__name">C# / .NET</span>
+    </div>
                     <div><span class="skills__percentage">Intermediate</span></div>
                 </div>
 
                 <div class="skills__data ss reveal">
                     <div class="skills__names">
                         <i class='bx bx-data skills__icon'></i>
-                        <span class="skills__name">SQL</span>
+                        <span class="skills__name">MySQL</span>
                     </div>
                     <div><span class="skills__percentage">Intermediate</span></div>
                 </div>
@@ -236,16 +249,16 @@
                 
                 <div class="skills__data ss reveal">
     <div class="skills__names">
-        <i class='bx bxl-bootstrap skills__icon'></i>
-        <span class="skills__name">Bootstrap</span>
+        <i class="bx bxl-tailwind-css skills__icon"></i>
+        <span class="skills__name">Tailwind</span>
     </div>
     <div><span class="skills__percentage">Advanced</span></div>
 </div>
 
 <div class="skills__data ss reveal">
     <div class="skills__names">
-        <i class='bx bxl-mongodb skills__icon'></i>
-        <span class="skills__name">MongoDB</span>
+        <i class="bx bxl-postgresql skills__icon"></i>
+        <span class="skills__name">PostgreSQL</span>
     </div>
     <div><span class="skills__percentage">Basic</span></div>
 </div>
@@ -258,7 +271,7 @@
 
                 <div class="skills__data ss reveal">
                     <div class="skills__names">
-                        <i class='bx bxl-visual-studio skills__icon'></i>
+                        <i class="bx bxl-visual-studio skills__icon"></i>
                         <span class="skills__name">VS Code</span>
                     </div>
                     <div><span class="skills__percentage">Advanced</span></div>
@@ -281,16 +294,16 @@
                 </div>
                 <div class="skills__data ss reveal">
                     <div class="skills__names">
-                        <i class='bx bxl-docker skills__icon'></i>
-                        <span class="skills__name">Docker</span>
+                        <i class="bx bxl-visual-studio skills__icon"></i>
+                        <span class="skills__name">VS Studio</span>
                     </div>
-                    <div><span class="skills__percentage">Basic</span></div>
+                    <div><span class="skills__percentage">Advanced</span></div>
                 </div>
 
                 <div class="skills__data ss reveal">
                     <div class="skills__names">
-                        <i class='bx bxl-netlify skills__icon'></i>
-                        <span class="skills__name">Netlify / Vercel</span>
+                        <i class="bx bx-message-rounded-dots skills__icon"></i>
+                        <span class="skills__name">Communication Skill</span>
                     </div>
                     <div><span class="skills__percentage">Advanced</span></div>
                 </div>
@@ -343,13 +356,13 @@
             <!-- Project 1 -->
             <div class="work__card reveal">
                 <div class="work__img">
-                    <img src="assets/img/project1.png" alt="Car Inventory">
+                    <img src="assets/img/project1.png" alt="The Book Matrix">
                 </div>
                 <div class="work__data">
-                    <h3 class="work__title">Car Inventory Management</h3>
+                    <h3 class="work__title">The Book Matrix</h3>
 
                     <p class="work__desc">
-                        A desktop-based system for managing car sales, inventory tracking, and customer records with efficient database integration.
+                        A professional ASP.NET Core MVC book shop management system built with a layered architecture, SQL Server ,shopping cart, SSLCommerz sandbox payment, and sales analytics dashboard.
                     </p>
 
                     <div class="work__tags">
@@ -358,9 +371,13 @@
                         <span class="tag tag--sql">SQL</span>
                     </div>
 
-                    <a href="https://github.com/syringe-Ohy/CarSalesAndInventoryManagementSystem"
+                    <a href="https://github.com/Arman20021/THE__BOOK__MATRIX__FULLSTACK__.NET_CORE_PROJECT"
                        target="_blank" class="work__button">
                         View Project <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="http://thebookmatrix.tryasp.net/"
+                       target="_blank" class="work__button">
+                        Live 
                     </a>
                 </div>
             </div>
@@ -368,23 +385,28 @@
             <!-- Project 2 -->
             <div class="work__card reveal">
                 <div class="work__img">
-                    <img src="assets/img/project2.jpeg" alt="CinePlex">
+                    <img src="assets/img/project2.png" alt="CinePlex">
                 </div>
                 <div class="work__data">
-                    <h3 class="work__title">AIUB CinePlex</h3>
+                    <h3 class="work__title">University Research Project Management</h3>
 
                     <p class="work__desc">
-                        A cinema management system that handles movie listings, ticket booking, and scheduling with database support.
+                        Developed a role-based web application for managing academic research projects, publications,funding, manage user , teamwork and institutional data.
                     </p>
 
                     <div class="work__tags">
-                        <span class="tag tag--java">Java</span>
-                        <span class="tag tag--sql">SQL</span>
+                        <span class="tag tag--java">PHP</span>
+                        <span class="tag tag--sql">Oracle</span>
+                        <span class="tag tag--sql">HTML</span>
                     </div>
 
-                    <a href="https://github.com/syringe-Ohy/AIUB_Cineplex"
+                    <a href="https://github.com/Arman20021/University_Research_Project_Management_System_By_Oracle_10g"
                        target="_blank" class="work__button">
                         View Project <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1rJT3z88uItLNIKcxIHUKDJqeSC4lA1X2/view?usp=sharing"
+                       target="_blank" class="work__button">
+                        Demo  
                     </a>
                 </div>
             </div>
@@ -392,21 +414,24 @@
             <!-- Project 3 -->
             <div class="work__card reveal">
                 <div class="work__img">
-                    <img src="assets/img/project3.jpg" alt="Phishing Detection">
+                    <img src="assets/img/project3.png" alt="Comming Soon">
                 </div>
                 <div class="work__data">
-                    <h3 class="work__title">Phishing Detection System</h3>
+                    <h3 class="work__title">City Shop</h3>
 
                     <p class="work__desc">
-                        A machine learning model that detects malicious or phishing websites based on URL features and behavior patterns.
+                       CittyShop is a backend e-commerce REST API built using Django REST Framework (DRF).
+It provides core e-commerce functionalities such as product management, category organization, cart handling, and order processing.
                     </p>
 
                     <div class="work__tags">
-                        <span class="tag tag--python">Python</span>
-                        <span class="tag tag--ml">Machine Learning</span>
+                        <span class="tag tag--python">Django</span>
+                        <span class="tag tag--ml">Rest API</span>
+                        <span class="tag tag--ml">React</span>
+                        <span class="tag tag--ml">PostgreSQL</span>
                     </div>
 
-                    <a href="https://github.com/syringe-Ohy/Phishing-Website-Detection"
+                    <a href="https://github.com/Arman20021/CityShop_Ecommerce_Project-Based-on-DRF-RESTAPI"
                        target="_blank" class="work__button">
                         View Project <i class='bx bxl-github'></i>
                     </a>
@@ -419,19 +444,19 @@
                     <img src="assets/img/project4.png" alt="Book Borrowing Website">
                 </div>
                 <div class="work__data">
-                    <h3 class="work__title">Book Borrowing Website</h3>
+                    <h3 class="work__title">EVENTO</h3>
 
                     <p class="work__desc">
-                        A web platform for managing book borrowing and returning with user-friendly interface and database support.
+                        EVENTO is a web-based Event Management System built with Django. It allows users to register, verify their email, browse events, join events, and receive confirmation emails. 
                     </p>
 
                     <div class="work__tags">
-                        <span class="tag tag--web">PHP</span>
-                        <span class="tag tag--web">HTML</span>
-                        <span class="tag tag--web">JavaScript</span>
+                        <span class="tag tag--web">Django</span>
+                        <span class="tag tag--web">Tailwind</span>
+                        <span class="tag tag--web">PostgreSQL</span>
                     </div>
 
-                    <a href="https://github.com/syringe-Ohy/BookBorrowingWebsite"
+                    <a href="https://github.com/Arman20021/Event_Management_System_Django"
                        target="_blank" class="work__button">
                         View Project <i class='bx bxl-github'></i>
                     </a>
@@ -444,14 +469,37 @@
                     <img src="assets/img/project5.png" alt="Portfolio">
                 </div>
                 <div class="work__data">
-                    <h3 class="work__title">Portfolio Website</h3>
+                    <h3 class="work__title">Hungry Naki</h3>
 
                     <p class="work__desc">
-                        A responsive personal portfolio website showcasing projects, skills, and achievements with modern UI design.
+                       An Online Food Ordering System built with Java where users can browse multiple restaurants, view food menus, customize their orders, make payments, and place orders easily through the system.
                     </p>
 
                     <div class="work__tags">
-                        <span class="tag tag--web">HTML/CSS</span>
+                        <span class="tag tag--web">JAVA</span>
+                        <span class="tag tag--web">Swing</span>
+                    </div>
+
+                    <a href="https://github.com/Arman20021/Hungry_Naki_Java_Academic_Project"
+                       target="_blank" class="work__button">
+                        View Project <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work__card reveal">
+                <div class="work__img">
+                    <img src="assets/img/project6.png" alt="Portfolio">
+                </div>
+                <div class="work__data">
+                    <h3 class="work__title">Portfolio Website</h3>
+
+                    <p class="work__desc">
+                        A responsive personal portfolio website showcasing projects, and skills with modern UI design.
+                    </p>
+
+                    <div class="work__tags">
+                        <span class="tag tag--web">HTML</span>
+                        <span class="tag tag--web">CSS</span>
                         <span class="tag tag--web">JavaScript</span>
                     </div>
 
@@ -460,6 +508,72 @@
                         View Project <i class='bx bxl-github'></i>
                     </a>
                 </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- COMPETITIVE PROGRAMMING -->
+<section class="cp section" id="cp">
+    <div class="section reveal">
+        <h2 class="section-title">Competitive Programming</h2>
+
+        <div class="cp__container bd-grid">
+
+            <!-- Codeforces -->
+            <div class="cp__card reveal">
+                <div class="cp__icon-box">
+                    <img src="assets/img/codeforces.png" alt="Codeforces Logo" class="cp__logo">
+                </div>
+
+                <h3 class="cp__title">Codeforces</h3>
+
+                <div class="cp__stats">
+                    <p><strong>Max Rating:</strong> 1109</p>
+                    <p><strong>Problem Solved:</strong> 250+</p>
+                </div>
+
+                <a href="https://codeforces.com/profile/Arman_Ar" target="_blank" class="cp__button">
+                    View Profile <i class="bx bx-link-external"></i>
+                </a>
+            </div>
+
+            <!-- CodeChef -->
+            <div class="cp__card reveal">
+                <div class="cp__icon-box">
+                    <img src="assets/img/codechef.png" alt="CodeChef Logo" class="cp__logo">
+                </div>
+
+                <h3 class="cp__title">CodeChef</h3>
+
+                <div class="cp__stats">
+                    <p><strong>Max Rating:</strong> 1414</p>
+                    <p><strong>Problem Solved:</strong> 200+</p>
+                </div>
+
+                <a href="https://www.codechef.com/users/arman_2002" target="_blank" class="cp__button">
+                    View Profile <i class="bx bx-link-external"></i>
+                </a>
+            </div>
+
+            <!-- LeetCode -->
+            <div class="cp__card reveal">
+                <div class="cp__icon-box">
+                    <img src="assets/img/leetcode.png" alt="LeetCode Logo" class="cp__logo">
+                </div>
+
+                <h3 class="cp__title">LeetCode</h3>
+
+                <div class="cp__stats">
+                    <p><strong>Max Rating:</strong> 1449</p>
+                    <p><strong>Problem Solved:</strong> 40+</p>
+                </div>
+
+                <a href="https://leetcode.com/u/mdarmanislam20021/" target="_blank" class="cp__button">
+                    View Profile <i class="bx bx-link-external"></i>
+                </a>
             </div>
 
         </div>
@@ -491,54 +605,7 @@
 </div>
 </section>
 <!-- ACHIEVEMENTS -->
-<section class="work section" id="achievements">
-    <div class="section reveal">
-    <h2 class="section-title">Achievements</h2>
 
-    <div class="work__container bd-grid achievements-container">
-
-        <!-- Dean's List -->
-        <div class="achievement-card reveal">
-            <img src="assets/img/dl.png" alt="Dean's List" class="achievement-img">
-            <div class="achievement-content">
-                <h4>Dean’s List Honors</h4>
-                <p>Recognized for academic excellence at AIUB.</p>
-            </div>
-        </div>
-
-        <div class="achievement-card reveal">
-            <img src="assets/img/cs.png" alt="Cisco Certificate" class="achievement-img">
-            <div class="achievement-content">
-                <h4>CISCO Certification</h4>
-                <p>Completed networking and cybersecurity certification.</p>
-            </div>
-        </div>
-    </div>   
-
-       <div class="work__container bd-grid achievements-container">
-
-        <!-- Scholarship -->
-        <div class="achievement-card reveal">
-            <div class="achievement-content">
-                <h4>Academic Scholarship</h4>
-                <p>Awarded scholarship for strong academic performance.</p>
-            </div>
-        </div>
-
-        <!-- Volunteering -->
-        <div class="achievement-card reveal">
-            <div class="achievement-content">
-                <h4>University Event Volunteering</h4>
-                <p>Worked in events like CS Fest, Concerts, Pohela Boishakh.</p>
-            </div>
-        </div>
-        </div>
-         <!-- Cisco -->
-         
-
-    </div>
-    </div>
-</section>
 
 <section class="contact section" id="contact">
     <div class="section reveal">
@@ -547,50 +614,22 @@
         <div class="contact__container bd-grid">
             <div class="contact__content">
 
-                <a href="mailto:rizvi.ohy@icloud.com" class="contact__item">
+                <a href="mailto:mdarmanislam20021@gmail.com" class="contact__item">
                     <i class="bx bx-envelope contact__icon"></i>
-                    <span>rizvi.ohy@icloud.com</span>
+                    <span>mdarmanislam20021@gmail.com</span>
                 </a>
 
                 <a href="tel:01703223153" class="contact__item">
                     <i class="bx bx-phone contact__icon"></i>
-                    <span>01703223153</span>
+                    <span>01775757533</span>
                 </a>
 
             </div>
 
-            <div class="footer__social section reveal">
-                <a href="https://github.com/syringe-Ohy" class="footer__icon">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/rizvi-karim-ohy-6905a42b5/" class="footer__icon">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-                <a href="https://www.facebook.com/syringe.ohy/" class="footer__icon">
-                    <i class='bx bxl-facebook'></i>
-                </a>
-
-                <!-- NEW -->
-                <a href="https://x.com/yours_Ohy" class="footer__icon">
-                    <i class='bx bxl-twitter'></i> <!-- X (Twitter) -->
-                </a>
-
-                <a href="https://www.instagram.com/sy._.ringe._/" class="footer__icon">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-
-                <a href="https://www.threads.com/@sy._.ringe._" class="footer__icon">
-                    <i class='bx bxl-meta'></i> <!-- Threads fallback -->
-                </a>
-            </div>
+         
         </div>
     </div>
 </section>
-
-<!-- Boxicons CDN (for icons) -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </main>
 
@@ -604,7 +643,7 @@
         <br>    If you want, leave an anonymous note 💌
     </h3>
 
-    <form id="noteForm" action="https://formspree.io/f/xpqkaeaz" method="POST">
+    <form id="noteForm" action="https://formspree.io/f/xwvjejeq" method="POST">
         <textarea  class="input" name="message" placeholder="I am all ears....." required></textarea>
         <br>
         <button type="submit">Send</button>
@@ -618,169 +657,13 @@
 <button id="floatBtn"></button>
     
 
-    <p class="footer__copy">© 2026 Rizvi Karim Ohy</p>
+    <p class="footer__copy">© 2026 Md Arman Islam</p>
 </footer>
 
-<script src="assets/js/main.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const texts = [
-        "Machine Learning Researcher",
-        "Data Scientist",
-        "Web Developer",
-        "Software Engineer"
-    ];
-
-    let index = 0;
-    let charIndex = 0;
-    let currentText = "";
-    let isDeleting = false;
-
-    function typeEffect() {
-        const display = document.getElementById("dynamic-text");
-
-        if (!display) return; // safety check
-
-        currentText = texts[index];
-
-        if (!isDeleting) {
-            display.textContent = currentText.substring(0, charIndex++);
-            if (charIndex > currentText.length) {
-                isDeleting = true;
-                setTimeout(typeEffect, 1000);
-                return;
-            }
-        } else {
-            display.textContent = currentText.substring(0, charIndex--);
-            if (charIndex === 0) {
-                isDeleting = false;
-                index = (index + 1) % texts.length;
-            }
-        }
-
-        setTimeout(typeEffect, isDeleting ? 30 : 60);
-    }
-
-    typeEffect();
-
-});
-</script>
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-        }
-    });
-}, {
-    threshold: 0.2
-});
-
-document.querySelectorAll(".reveal").forEach((el) => {
-    observer.observe(el);
-});
-</script>
-<script>
-window.addEventListener("scroll", reveal);
-
-function reveal() {
-    const reveals = document.querySelectorAll(".reveal");
-
-    for (let i = 0; i < reveals.length; i++) {
-        let windowHeight = window.innerHeight;
-        let elementTop = reveals[i].getBoundingClientRect().top;
-        let elementVisible = 100;
-
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active"); // remove if you want repeat animation
-        }
-    }
-}
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const text = "'Mistakes are proof that you are trying.'";
-    let index = 0;
-
-    function typeQuote() {
-        const el = document.getElementById("quote-text");
-        if (!el) return;
-
-        if (index < text.length) {
-            el.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeQuote, 50); // speed here
-        }
-    }
-
-    typeQuote();
-});
-</script>
-<script>
-    function showReviewMessage() {
-        alert("Sorry, this paper is currently under review.\nExpected Date: 20 April 2026");
-    }
-</script>
-<script>
-const form = document.getElementById("noteForm");
-const successMsg = document.getElementById("successMessage");
-
-form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-
-    const data = new FormData(form);
-
-    await fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: { 'Accept': 'application/json' }
-    });
-
-    form.reset();
-    successMsg.classList.add("show");
-    setTimeout(() => {
-    successMsg.classList.remove("show");
-}, 3000);
-});
-</script>
-<script>
-    function toggleScroll() {
-        const btn = document.getElementById("scrollBtn");
-        const icon = document.getElementById("scrollIcon");
-        const scrollHeight = document.documentElement.scrollHeight;
-        const currentScroll = window.scrollY + window.innerHeight;
-
-        // If we are near the bottom (within 100px), scroll to top
-        if (currentScroll >= scrollHeight - 100) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else {
-            // Otherwise, scroll to the bottom
-            window.scrollTo({ top: scrollHeight, behavior: 'smooth' });
-        }
-    }
-
-    // Optional: Change the icon direction based on scroll position
-    window.onscroll = function() {
-        const icon = document.getElementById("scrollIcon");
-        const scrollHeight = document.documentElement.scrollHeight;
-        const currentScroll = window.scrollY + window.innerHeight;
-
-        if (currentScroll >= scrollHeight - 100) {
-            icon.classList.replace('bx-up-arrow-alt', 'bx-down-arrow-alt'); // Point down at top
-            // Wait, logic flip: if at bottom, point up.
-            icon.className = 'bx bx-up-arrow-alt';
-        } else if (window.scrollY === 0) {
-            icon.className = 'bx bx-down-arrow-alt';
-        }
-    };
-</script>
-<button onclick="toggleScroll()" id="scrollBtn" class="scroll-btn">
-    <i class='bx bx-up-arrow-alt' id="scrollIcon"></i>
+<button id="scrollBtn" class="scroll-btn" aria-label="Scroll page">
+    <i class='bx bx-down-arrow-alt' id="scrollIcon"></i>
 </button>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
