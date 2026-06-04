@@ -152,3 +152,59 @@ document.addEventListener('DOMContentLoaded', () => {
 function showReviewMessage() {
   alert('Sorry, this paper is currently under review.\nExpected Date: 20 April 2026');
 }
+
+
+
+
+
+
+
+
+
+/* ======================================================
+   Cursor moving glow + sparkle effect
+   Paste this at the VERY BOTTOM of main.js
+====================================================== */
+
+const root = document.documentElement;
+
+let lastSparkTime = 0;
+
+document.addEventListener("mousemove", function (e) {
+    root.style.setProperty("--mx", e.clientX + "px");
+    root.style.setProperty("--my", e.clientY + "px");
+
+    const now = Date.now();
+
+    // controls sparkle density
+    if (now - lastSparkTime > 28) {
+        createCursorSpark(e.clientX, e.clientY);
+        lastSparkTime = now;
+    }
+});
+
+function createCursorSpark(x, y) {
+    const spark = document.createElement("span");
+    spark.className = "cursor-spark";
+
+    if (Math.random() > 0.72) {
+        spark.classList.add("white");
+    }
+
+    const size = Math.random() * 4 + 3;
+    const moveX = (Math.random() - 0.5) * 70;
+    const moveY = (Math.random() - 0.5) * 70;
+
+    spark.style.width = size + "px";
+    spark.style.height = size + "px";
+    spark.style.left = x + "px";
+    spark.style.top = y + "px";
+    spark.style.setProperty("--sx", moveX + "px");
+    spark.style.setProperty("--sy", moveY + "px");
+
+    document.body.appendChild(spark);
+
+    setTimeout(() => {
+        spark.remove();
+    }, 800);
+}
