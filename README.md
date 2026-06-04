@@ -47,7 +47,8 @@ This portfolio website represents my academic background, technical skills, deve
 
 ## Folder Structure
 
-portfolio/
+```text
+arman-islam-portfolio/
 │
 ├── index.html
 ├── README.md
@@ -61,14 +62,19 @@ portfolio/
 │   │
 │   ├── img/
 │   │   ├── favicon.ico
+│   │   ├── a-logo-favicon.png
 │   │   ├── codeforces.png
 │   │   ├── codechef.png
 │   │   ├── leetcode.png
-│   │   └── project images
+│   │   ├── project1.png
+│   │   ├── project2.png
+│   │   ├── project3.jpg
+│   │   ├── project4.png
+│   │   └── project5.png
 │   │
 │   └── cv/
 │       └── Final_CV.pdf
-
+```
 ## Projects Highlighted
 
 * The Book Matrix
