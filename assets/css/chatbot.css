@@ -199,6 +199,7 @@
     font-size: 0.88rem;
     line-height: 1.55;
     white-space: pre-wrap;
+    text-align: left;
 }
 
 .ai-message.user .ai-message__text {
