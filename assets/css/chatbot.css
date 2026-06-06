@@ -189,6 +189,22 @@
     background: #ff6a00;
 }
 
+.ai-message {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    align-items: flex-end;
+}
+
+.ai-message.bot {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ai-message.user {
+    flex-direction: row-reverse;
+}
+
 .ai-message__text {
     max-width: 78%;
     color: rgba(255, 255, 255, 0.88);
@@ -201,7 +217,6 @@
     white-space: pre-wrap;
     text-align: left;
 }
-
 .ai-message.user .ai-message__text {
     color: #ffffff;
     background: linear-gradient(135deg, #ff6a00, #ff8a00);
