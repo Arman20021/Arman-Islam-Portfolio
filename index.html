@@ -664,6 +664,61 @@ It provides core e-commerce functionalities such as product management, category
     <i class='bx bx-down-arrow-alt' id="scrollIcon"></i>
 </button>
 
+<!-- AI CHATBOT -->
+<div class="ai-chatbot" id="aiChatbot">
+    <button class="ai-chatbot__button" id="aiChatToggle" aria-label="Open AI chatbot">
+        <span class="ai-chatbot__pulse"></span>
+        <i class='bx bx-bot'></i>
+    </button>
+
+    <div class="ai-chatbot__window" id="aiChatWindow">
+        <div class="ai-chatbot__header">
+            <div>
+                <h3>Arman AI</h3>
+                <p>Ask about my skills, projects, education, or contact.</p>
+            </div>
+
+            <button class="ai-chatbot__close" id="aiChatClose" aria-label="Close chatbot">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+
+        <div class="ai-chatbot__messages" id="aiChatMessages">
+            <div class="ai-message bot">
+                <div class="ai-message__avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div class="ai-message__text">
+                    Hi, I am Arman AI. Ask me anything about Arman's portfolio.
+                </div>
+            </div>
+        </div>
+
+        <div class="ai-chatbot__quick">
+            <button type="button" data-question="What is Arman's CGPA?">CGPA</button>
+            <button type="button" data-question="What projects has Arman built?">Projects</button>
+            <button type="button" data-question="What skills does Arman have?">Skills</button>
+        </div>
+
+        <form class="ai-chatbot__form" id="aiChatForm">
+            <input
+                type="text"
+                id="aiChatInput"
+                placeholder="Ask about Arman..."
+                autocomplete="off"
+                maxlength="500"
+                required
+            >
+            <button type="submit" aria-label="Send message">
+                <i class='bx bx-send'></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<link rel="stylesheet" href="assets/css/chatbot.css">
+
 <script src="assets/js/main.js"></script>
+<script src="assets/js/chatbot.js"></script>
 </body>
 </html>
