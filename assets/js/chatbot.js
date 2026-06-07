@@ -165,9 +165,9 @@ function hideChatPopup() {
     }
 }
 
-setTimeout(showChatPopup, 2500);
+setTimeout(showChatPopup, 1500);
 
-setInterval(showChatPopup, 18000);
+setInterval(showChatPopup, 10000);
 
 if (aiChatPopupClose) {
     aiChatPopupClose.addEventListener("click", hideChatPopup);
