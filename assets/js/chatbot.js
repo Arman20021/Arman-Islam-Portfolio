@@ -1,3 +1,8 @@
+const aiChatPopup = document.getElementById("aiChatPopup");
+const aiChatPopupText = document.getElementById("aiChatPopupText");
+const aiChatPopupClose = document.getElementById("aiChatPopupClose");
+
+
 const aiChatToggle = document.getElementById("aiChatToggle");
 const aiChatClose = document.getElementById("aiChatClose");
 const aiChatWindow = document.getElementById("aiChatWindow");
@@ -7,6 +12,7 @@ const aiChatMessages = document.getElementById("aiChatMessages");
 const quickButtons = document.querySelectorAll(".ai-chatbot__quick button");
 
 function openChat() {
+    hideChatPopup();
     aiChatWindow.classList.add("active");
     aiChatInput.focus();
 }
@@ -125,3 +131,44 @@ quickButtons.forEach((button) => {
         await sendMessage(question);
     });
 });
+
+
+
+const popupMessages = [
+    "Need any help?",
+    "Are you bored?",
+    "Ask me about Arman's projects.",
+    "Want to know Arman's CGPA?",
+    "Need Arman's contact info?"
+];
+
+let popupIndex = 0;
+
+function showChatPopup() {
+    if (!aiChatPopup || aiChatWindow.classList.contains("active")) {
+        return;
+    }
+
+    aiChatPopupText.textContent = popupMessages[popupIndex];
+    aiChatPopup.classList.add("active");
+
+    popupIndex = (popupIndex + 1) % popupMessages.length;
+
+    setTimeout(() => {
+        aiChatPopup.classList.remove("active");
+    }, 6000);
+}
+
+function hideChatPopup() {
+    if (aiChatPopup) {
+        aiChatPopup.classList.remove("active");
+    }
+}
+
+setTimeout(showChatPopup, 2500);
+
+setInterval(showChatPopup, 18000);
+
+if (aiChatPopupClose) {
+    aiChatPopupClose.addEventListener("click", hideChatPopup);
+}
